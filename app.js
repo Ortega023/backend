@@ -1,6 +1,12 @@
 const express = require('express');
 const connect = require('./config/db');
 const profesoresRoutes = require('./routes/profesores');
+const dotenv = require("dotenv");
+
+dotenv.config({
+    path: path.resolve(".env")
+});
+
 const app = express();
 connect();
 app.use(express.json());
