@@ -4,9 +4,6 @@ const profesoresRoutes = require('./routes/profesores');
 const cors=require('cors');
 const dotenv = require("dotenv");
 
-dotenv.config({
-    path: path.resolve(".env")
-});
 
 const app = express();
 connect();
