@@ -1,10 +1,6 @@
 const dotenv = require("dotenv");
 const mongoose =require('mongoose');
 
-dotenv.config({
-    path: path.resolve(".env")
-});
-
 const { DB_HOST, DB_USER ,DB_PASSWORD}=process.env;
 const uri= `mongodb+srv://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/Crud?retryWrites=true&w=majority`;
 const conectarDB =async () =>{ 
